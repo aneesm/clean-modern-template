@@ -1,0 +1,85 @@
+/* ------------------------------------------
+  FONT VARIABLES
+--------------------------------------------- */
+$helvetica-neue: "Helvetica Neue";
+$helvetica: "Helvetica";
+$arial: "Arial";
+$sans: "sans-serif";
+$opensans-reg: "Open-Sans-Regular";
+$raleway-reg: "Raleway-Regular";
+$raleway-bold: "Raleway-Bold";
+
+/* ------------------------------------------
+  BASE FONT STYLES
+--------------------------------------------- */
+$base-font-size: 100%;
+$base-line-height: 1.3;
+
+strong,
+bold {
+  //font-family: ;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+html {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+
+  // @include breakpoint($screen-sm-min) {
+  //   font-size: 112.5%;
+
+  //   /* This means 18px
+  // }
+
+  // @include breakpoint($screen-lg-min) {
+  //   font-size: 125%;
+
+  //   /* This means 20px
+  //   line-height: 1.4;
+  // }
+}
+
+body {
+  font: #{$base-font-size}/#{$base-line-height} $opensans-reg, Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $raleway-bold;
+  color: $black;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.875em;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 0.875rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+p {}

@@ -1,0 +1,52 @@
+/* ------------------------------------------
+  COLOUR VARIABLES
+--------------------------------------------- */
+// TODO Move to seperate partial
+$black: #000000;
+$white: #FFFFFF;
+$tradewind: #66b3ba;
+$tradewind-dark: #5fa8af;
+$breaker-bay: #589DA4;
+$breaker-bay-dark: #25686f;
+$pink: #f15f5b;
+
+// This line-height determines the basic unit of vertical rhythm.
+// Font sizes
+// $rhythm-unit: "rem";
+
+// This line-height determines the basic unit of vertical rhythm.
+
+/* ------------------------------------------
+  COMPASS PLUGINS
+--------------------------------------------- */
+@import "susy";
+@import "compass";
+@import "compass/support";
+@import "compass/reset";
+@import "compass/utilities/general/clearfix";
+@import "compass/css3";
+@import "compass/css3/transition";
+@import "compass/typography/vertical_rhythm";
+@import "compass/css3/user-interface";
+@import "breakpoint";
+
+/* ------------------------------------------
+  SUSY SETTINGS
+--------------------------------------------- */
+@include establish-baseline;
+
+$susy: (columns: 12, gutters: 1 / 6, container: 1200px, math: fluid, output: float, global-box-sizing: border-box);
+
+/* ------------------------------------------
+  PARTIAL SCSS
+--------------------------------------------- */
+@import "partials/_screen";
+@import "partials/_typography";
+@import "partials/_mixins";
+@import "partials/_colors";
+@import "partials/_links";
+@import "partials/_buttons";
+@import "partials/_header";
+@import "partials/_footer";
+@import "partials/_fonts";
+@import "partials/_forms";

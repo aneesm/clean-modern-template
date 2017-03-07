@@ -1,0 +1,83 @@
+//Slide effect button animation
+.button-outline {
+  display: inline-block;
+  position: relative;
+  height: 60px;
+  padding: 0 45px;
+  transition: color .3s, background 0s;
+  border: 3px solid #e3e2db;
+  border-radius: 30px;
+  background: $pink;
+  color: $white;
+  font-family: $helvetica-neue;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: .22em;
+  line-height: 54px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:before,
+  &:after {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+    transition: transform .3s;
+    background: $white;
+    content: '';
+    z-index: -1;
+  }
+
+  &:before {
+    opacity: .5;
+    transition-delay: .175s;
+  }
+
+  &:after {
+    transition-delay: 0s;
+  }
+
+  &:hover {
+    transition: background .3s .2s, color .3s;
+    background: $white;
+    color: $black;
+
+    &:before,
+    &:after {
+      transform: translate3d(0, 100%, 0);
+    }
+
+    &:after {
+      transition-delay: .175s;
+    }
+
+    &:before {
+      transition-delay: 0s;
+    }
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    background: $white;
+    color: $black;
+  }
+}
+
+//Hero button
+.button-holder {
+  @include center(true, false);
+
+  position: absolute;
+  bottom: 6em;
+}
